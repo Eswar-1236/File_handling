@@ -10,6 +10,6 @@ a2=Employe(103,'shanu',32323)
 print(a.__dict__)
 print(a1.__dict__)
 print(a2.__dict__)
-print(Employe.__dict__)
+# print(Employe.__dict__)
 
 

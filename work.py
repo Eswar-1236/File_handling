@@ -23,16 +23,46 @@ import pandas as pd
 #print(a.iloc[:-5,0])#To select the first row of data in a DataFrame
 # print(a.loc[:,['firstName','lastName','bloodGroup']])
 
-a=pd.DataFrame({'yes':[50,21],'no':[131,3]})
-print(a)
-a1=pd.DataFrame({'bob':['i liked it','it was awful'],'sue':['pretty good.','bland.']})
+# a=pd.DataFrame({'yes':[50,21],'no':[131,3]})
+# print(a)
+# a1=pd.DataFrame({'bob':['i liked it','it was awful'],'sue':['pretty good.','bland.']})
 
-print(a1)
-a2=pd.Series([30,35,40],index=['2015 sales','2016 sales','2017 sales'],name='product A')
-print(a2)
+# print(a1)
+# a2=pd.Series([30,35,40],index=['2015 sales','2016 sales','2017 sales'],name='product A')
+# print(a2)
+# dict={}
+# a=0
+# for i in range(len(key_value_pairs)):
+#     dict[key_value_pairs[i][0]]=key_value_pairs[i][1]
+# print(dict)
+a="king of indian"
+# s=a.split()
+# m=""
 
-wine_reviews = pd.read_csv("../input/wine-reviews/winemag-data-130k-v2.csv")
-def _read(file):
-    return pd.read_csv(join('PYTHONS', file),parse_dates=[0,5],index_col='trip_id',
-    )
-_read(wine_reviews)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

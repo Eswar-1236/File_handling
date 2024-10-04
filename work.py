@@ -1,5 +1,5 @@
-import json
-import pandas as pd
+# import jsonpyth
+# import pandas as pd
 # a=open('js.py','r')
 # emp=json.load(a)
 # s=open('male.py','w+')
@@ -35,14 +35,30 @@ import pandas as pd
 # for i in range(len(key_value_pairs)):
 #     dict[key_value_pairs[i][0]]=key_value_pairs[i][1]
 # print(dict)
-a="king of indian"
+# a="king of indian"
 # s=a.split()
 # m=""
-
-
-
-
-
+import pymongo 
+import csv
+import json
+import pymongo
+client=pymongo.MongoClient("mongodb://localhost:27017/")
+db=client["ESWAR"]
+colector=db['csv_mongo']
+a=open("bbb.csv",'r')
+row=csv.reader(a)
+a=list(row)
+one=a[0]
+l=[]
+for i in a[1:]:
+    dict={}
+    m=0
+    for x in i:
+        if m<len(a):
+            dict[one[m]]=x
+            m+=1
+    l.append(dict)
+colector.insert_many(l)
 
 
 

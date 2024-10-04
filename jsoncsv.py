@@ -10,6 +10,7 @@ fp1=open('emp.csv','w+',newline="")
 # json.dump(customer,fp)
 a=csv.writer(fp1)
 a.writerow(['id','name','avail'])
+
 for i in customer:
     a.writerow([i['id'],i['name'],i['avail']])
 # fp.write(a)
